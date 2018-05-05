@@ -3,6 +3,10 @@ body {
 }
 
 /** HEADER **/
+
+header {
+	min-height: 100px;
+}
 #header-nav {
  	background-color: white;
 
