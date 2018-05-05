@@ -1,0 +1,104 @@
+body {
+ 	font-size: 16px;
+}
+
+/** HEADER **/
+#header-nav {
+ 	background-color: white;
+ 	height: 100px;
+}
+
+.navbar {
+	padding: 0 10%;
+	margin-bottom: 0;
+}
+
+.navbar div {
+	height: 100px;
+}
+
+.navbar-brand {
+ 	margin-bottom: 20px;
+ 	padding: 10px;
+ 	background-color: lightblue;
+ 	height: 100px;
+ 	padding-top: 40px;
+}
+
+.navbar-brand h1 {
+ 	color: white;
+ 	font-size: 1.5em;
+ 	font-weight: bold;
+ 	margin-top: 0;
+ 	margin-bottom: 0;
+}
+#collapsable-nav {
+	padding: 0;
+	height: 100px;
+}
+
+#collapsable-nav::after {
+	margin-bottom: 100px;
+}
+
+.navbar-header {
+	margin-left: 25%;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+ 	clear: both;
+ 	margin-top: -80px;
+}
+
+/* END HEADER */
+
+#container1 {
+	background-image: url(../img/mt-0132-slide02.jpg);
+	height:800px;
+}
+
+
+@media (max-width:767px)
+{
+	/*NAV LIST MOBILE*/
+	.navbar {
+	  padding: 0;
+	}
+
+	#nav-list {
+	  margin: 0;
+	  width: 100%;
+	}
+
+	#nav-list li {
+	  border-top: 2px solid black;
+	}
+
+	#nav-list a {
+	  text-align: center;
+	  color: black;
+	}
+	#nav-list a:hover {
+	  background: #E7E7E7;
+	}
+	#nav-list a span {
+	  font-size: 1.8em;
+	}
+}
+
+@media (min-width:768px)
+{
+	#nav-list li a{
+		color: black;
+		font-weight: 500;
+		font-size: 18px;
+	}
+
+	#nav-list{
+		margin-top:30px;
+		margin-bot:100px;
+	}
+}
