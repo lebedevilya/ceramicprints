@@ -199,7 +199,6 @@ header {
 .parallax { 
     /* The image used */
     background-image: url(../img/blue-abstract-background.jpg);
-    height: 400px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
