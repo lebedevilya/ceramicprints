@@ -14,6 +14,7 @@ header {
 
 #header-nav {
  	background-color: white;
+ 	border: none;
 
 }
 
@@ -82,10 +83,18 @@ header {
 
 #container1_text {
 	color: #277DFE;
-	font-size: 2.2em;
+	font-size: 2.5em;
     text-transform: uppercase;
     font-weight: bold;
 }
+
+#container1_text_bot {
+	color: grey;
+	font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 
 #container1 {
 	background-color: #f7f7f7;
@@ -98,7 +107,7 @@ header {
 	background-color: white;
 	margin-right: 40px;
 	margin-top: 30px;
-    min-height: 380px;
+    min-height: 450px;
 }
 
 .tab:last-child {
@@ -106,20 +115,23 @@ header {
 }
 
 .tabcontents {
-	padding: 20px;
+	padding: 10px;
 }
 
 .tab h3 {
-	color: #277DFE;
+	color: #333333;
 	font-size: 2em;
-}
-
-.tab span.glyphicon {
-	font-size: 5em;
+	min-height: 70px;
+	margin-bottom: 20px;
 }
 
 .tab span{
 	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.tab_icon {
+	margin-bottom: 20px;
 }
 
 /*TABS*/
@@ -173,6 +185,16 @@ header {
 	padding: 30px;
 }
 
+#imgs {
+	padding: 50px;
+}
+
+#imgs img {
+	height: 275px;
+	border-radius: 8px;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
 
 /* END CONTAINER2 */
 
@@ -180,8 +202,9 @@ header {
 #container3 {
 	padding-left: 0;
 	padding-right: 0;
+	min-height: 500px;
+	padding-top: 75px;
 }
-
 
 #container3 .row {
 	width: 80%;
@@ -204,19 +227,36 @@ header {
 }
 
 #container3_div div {
-	margin: 15%;
 	color: white;
+	padding: 0 80px;
+	margin-top: 50px;
 }
 
 #container3_div div h3 {
-	font-size: 2.5em;
+	font-size: 3em;
 	font-weight: bold;
+	margin: 0;
+	text-align: center;
 }
 
 #container3 .row div iframe {
-	margin: 50px 0 0 30px;
+
 }
 /* END CONTAINER3 */
+
+/* CONTAINER 4 */
+
+#container4 {
+	background-color: black;
+	height: 300px;
+}
+
+#container4_div {
+	color: white;
+	text-align: center;
+}
+
+/* END CONTAINER 4 */
 
 
 @media (max-width:767px)
