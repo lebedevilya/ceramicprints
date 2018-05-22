@@ -67,8 +67,16 @@ header {
 
 /* CONTAINER1 */
 
+#printer {
+	height: 80vh;
+}
+
 #img1 {
-	background-image: url(../img/mt-0132-slide02.jpg);
+	background: rgb(249,249,249); /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, rgba(249,249,249,1) 0%, rgba(232,232,232,1) 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(249,249,249,1) 0%,rgba(232,232,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, rgba(249,249,249,1) 0%,rgba(232,232,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e8e8e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	background-position: center;
     background-repeat: no-repeat;
   	background-size: cover;
@@ -78,6 +86,9 @@ header {
 #row1mid {
 	width: 80%;
 	margin: auto;
+}
+
+#row1mid div:first-child {
 	padding-top: 10%;
 }
 
@@ -228,8 +239,8 @@ header {
 
 #container3_div div {
 	color: white;
-	padding: 0 80px;
-	margin-top: 50px;
+	padding: 15px 80px;
+	text-align: center;
 }
 
 #container3_div div h3 {
@@ -237,10 +248,17 @@ header {
 	font-weight: bold;
 	margin: 0;
 	text-align: center;
+	margin-bottom: 100px;
 }
 
-#container3 .row div iframe {
+#iframe_div iframe {
+	display: block;
+	margin: auto;
+}
 
+#container3 a {
+	color: white;
+	font-size: 2em;
 }
 /* END CONTAINER3 */
 
@@ -254,10 +272,28 @@ header {
 #container4_div {
 	color: white;
 	text-align: center;
+	padding-top: 30px;
+}
+
+#container4_div h3 {
+	font-size: 3em;
+	margin-bottom: 100px;
+}
+
+#container4_div span {
+	font-size: 2em;
 }
 
 /* END CONTAINER 4 */
 
+/* OTHER */
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
 
 @media (max-width:767px)
 {
@@ -281,6 +317,12 @@ header {
 	#nav-list a span {
 	  font-size: 1.8em;
 	}
+	/*OTHER*/
+	#iframe_div iframe {
+		width: 500px;
+		height: 300px;
+		margin-bottom: 50px;
+	}
 }
 
 @media (min-width:768px)
@@ -292,5 +334,16 @@ header {
 
 	#nav-list{
 		margin-top:30px;
+	}
+}
+
+@media (max-width: 990px)
+{
+	#img1 {
+		height: 120vh;
+	}
+	#printer {
+		width: 80vw;
+		height: auto;
 	}
 }
