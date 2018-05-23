@@ -52,7 +52,7 @@ header {
 .navbar-header button.navbar-toggle {
  	clear: both;
  	margin-top: -70px;
- 	margin-right: 30px;
+ 	margin-right: 10px;
 }
 
 #nav-list a {
@@ -265,13 +265,14 @@ header {
 
 #container4 {
 	background-color: black;
-	height: 300px;
+	height: auto;
 }
 
 #container4_div {
 	color: white;
 	text-align: center;
 	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 #container4_div h3 {
@@ -318,10 +319,53 @@ header {
 	}
 	/*OTHER*/
 	#iframe_div iframe {
-		width: 500px;
-		height: 300px;
+		width: 300px;
+		height: 150px;
 		margin-bottom: 50px;
+		margin-top: 30px;
 	}
+
+	#container1_text {
+		font-size: 1.5em;
+	}
+
+	#container1_text_bot {
+		font-size: 1em;
+	}
+
+	#row2header {
+		font-size: 0.7em;
+	}
+
+	.tab {
+		margin-right: 0;
+	}
+
+	#container3_div div {
+		padding: 0;
+	}
+
+	#container3_div div h3 {
+		font-size: 2em;
+		margin-bottom: 10px;
+	}
+
+	#container3 a {
+		font-size: 1.5em;
+	}
+
+	#container4_div {
+		font-size: 0.75em;
+	}
+
+	#imgs img {
+		height: 175px;
+	}
+
+	#row3header {
+		font-size: 0.7em;
+	}
+
 }
 
 @media (min-width:768px)
@@ -345,4 +389,5 @@ header {
 		width: 80vw;
 		height: auto;
 	}
+
 }
